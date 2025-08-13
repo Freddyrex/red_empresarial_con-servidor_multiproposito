@@ -71,27 +71,29 @@ docker build -t ultimate_server -f dockerfile .
 # Imagen del cliente Ubuntu automatizado
 docker build -t ubuntu_station -f dockerfile_cliente .
 ```
-
 ## 📁 Estructura del Proyecto
-├── dockerfile # Dockerfile del servidor
-├── dockerfile_cliente # Dockerfile del cliente Ubuntu
-├── entrypoint.sh # Script de arranque del servidor
-├── setup.sh # Script de automatización del cliente
-├── dhcpd.conf # Configuración del servicio DHCP
-├── vsftpd.conf # Configuración del servicio FTP
-├── sshd_config # Configuración del servicio SSH
-├── pam-password # Políticas de seguridad de contraseñas
-├── init.sql # Script de inicialización de MySQL
-├── interfaces # Configuración de red estática
-├── menu_usuario.sh # Script extra con menú interactivo
-├── cliente/ # Archivos auxiliares del cliente
-│ └── setup.sh, dockerfile_cliente, etc.
-├── keys/ # Claves SSH de usuarios
-│ ├── ssh1, ssh1.pub
-│ ├── ssh2, ssh2.pub
-│ └── ubuntu_station.pub
-├── ubuntu_station_keys/ # Claves privadas y públicas del cliente
-│ ├── id_rsa_station
-│ └── id_rsa_station.pub
-└── docs/
-└── topologia.png # Imagen de la topología de red
+
+| Archivo / Carpeta         | Descripción |
+|---------------------------|-------------|
+| `dockerfile`              | Dockerfile del servidor |
+| `dockerfile_cliente`      | Dockerfile del cliente Ubuntu |
+| `entrypoint.sh`           | Script de arranque del servidor |
+| `setup.sh`                | Script de automatización del cliente |
+| `dhcpd.conf`              | Configuración del servicio DHCP |
+| `vsftpd.conf`             | Configuración del servicio FTP |
+| `sshd_config`             | Configuración del servicio SSH |
+| `pam-password`            | Políticas de seguridad de contraseñas |
+| `init.sql`                | Script de inicialización de MySQL |
+| `interfaces`              | Configuración de red estática |
+| `menu_usuario.sh`         | Script extra con menú interactivo |
+| `cliente/`                | Archivos auxiliares del cliente (ej. `setup.sh`, `dockerfile_cliente`) |
+| `keys/`                   | Claves SSH de usuarios |
+| ├── `ssh1`, `ssh1.pub`    | Clave privada y pública de usuario SSH1 |
+| ├── `ssh2`, `ssh2.pub`    | Clave privada y pública de usuario SSH2 |
+| └── `ubuntu_station.pub`  | Clave pública de cliente Ubuntu Station |
+| `ubuntu_station_keys/`    | Claves privadas y públicas del cliente |
+| ├── `id_rsa_station`      | Clave privada |
+| └── `id_rsa_station.pub`  | Clave pública |
+| `docs/`                   | Documentación y recursos |
+| └── `topologia.png`       | Imagen de la topología de red |
+
