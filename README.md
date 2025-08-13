@@ -70,7 +70,7 @@ docker build -t ultimate_server -f dockerfile .
 
 # Imagen del cliente Ubuntu automatizado
 docker build -t ubuntu_station -f dockerfile_cliente .
----
+```
 
 ## 📁 Estructura del Proyecto
 ├── dockerfile # Dockerfile del servidor
