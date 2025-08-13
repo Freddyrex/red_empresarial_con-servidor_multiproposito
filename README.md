@@ -6,7 +6,7 @@ Este proyecto, desarrollado por **Freddy Valenzuela**, simula una red corporativ
 
 ## 📸 Topología de Red
 
-![Topología de Red](./docs/topologia.png)
+![Topología de Red](./topologia.jpg)
 
 **Componentes destacados:**
 - `ultimate_server`: Servidor central con múltiples servicios
