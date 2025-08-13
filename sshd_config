@@ -1,0 +1,24 @@
+# Puerto estándar SSH
+Port 22
+
+# Solo protocolo 2 (más seguro)
+Protocol 2
+
+# Carpeta de claves autorizadas
+AuthorizedKeysFile .ssh/authorized_keys
+
+# Solo usuarios en este grupo pueden conectarse
+AllowGroups sshusers
+
+# Desactivar inicio de sesión como root
+PermitRootLogin no
+
+# Desactivar autenticación por contraseña
+PasswordAuthentication no
+
+# Permitir login por clave pública
+PubkeyAuthentication yes
+
+# Activar la validación de usuario
+ChallengeResponseAuthentication no
+UsePAM yes
